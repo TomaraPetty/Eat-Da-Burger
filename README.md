@@ -43,7 +43,7 @@
     2. User will type in a burger they would like to devoure. 
     3. Burger will entered into the database and will appear on the 'burgers to devoure' section.    
 
-<img src="./public/assets/img/eat-da-burger.png">
+<img src="./public/assets/img/eat-da-burger.png" alt="eat-da-burger website image" width="400">
 
 ## License 
 * Built under the MIT licence.
@@ -72,5 +72,5 @@ tomararuth@gmail.com
 <br>
 
 **LinkedIn:** 
-Tomara: https://www.linkedin.com/in/tomara-petty/ 
+https://www.linkedin.com/in/tomara-petty/ 
 
