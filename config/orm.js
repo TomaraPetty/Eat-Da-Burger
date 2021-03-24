@@ -1,5 +1,15 @@
 const connection = require('../config/connection.js');
 
+function printQuestionMarks(num) {
+  var arr = [];
+
+  for (var i = 0; i < num; i++) {
+    arr.push("?");
+  }
+
+  return arr.toString();
+};
+
 function objToSql(ob) {
     var arr = [];
   
@@ -52,15 +62,15 @@ const orm = {
         })
     },
     update: function(table, objColVals, condition, cb) {
-        var queryString = "UPDATE " + table;
+        var dbQuery = "UPDATE " + table;
     
-        queryString += " SET ";
-        queryString += objToSql(objColVals);
-        queryString += " WHERE ";
-        queryString += condition;
+        dbQuery += " SET ";
+        dbQuery += objToSql(objColVals);
+        dbQuery += " WHERE ";
+        dbQuery += condition;
     
-        console.log(queryString);
-        connection.query(queryString, function(err, res) {
+        console.log(dbQuery);
+        connection.query(dbQuery, function(err, res) {
           if (err) {
             throw err;
           }
