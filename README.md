@@ -1,6 +1,4 @@
 # Eat-Da-Burger
-
-Click here to see it in action: https://eat-da-burger-tp.herokuapp.com/
   
 ![GitHub](https://img.shields.io/badge/license-MIT-green)
 
